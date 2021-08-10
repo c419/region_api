@@ -73,6 +73,15 @@ def test_add_city(client, token):
         for k in c:
             assert c[k] == response.get_json()[k], f'{k}:{c[k]} sent, but {response.get_json()[k]} received'
         
+def test_get_cities(client, token):
+    client_headers = {'x-access-tokens': token}
+    response = client.get(API_BASE + '/cities', headers=client_headers)
+    logging.debug(f'Response status is {response.status}')
+    logging.debug(f'Response JSON is {response.get_json()}')
+    assert response.status_code == 200, f'API returned {response.status_code}'
+    assert len(response.get_json()) == 3, f'We had {len(initial_cities)} cities but API returned {response.get_json()}'
+    assert any([c.get('name') == initial_cities[0].get('name') for c in response.get_json()]), f'Didnt found {initial_cities[0].get(name)} in API response'
+
 
 def tests_notready():
     assert False, 'Tests aren\'t  ready (yet)'
