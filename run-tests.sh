@@ -1,3 +1,3 @@
 #!/bin/bash
 cd tests
-pytest -v
+pytest -v --log-level=DEBUG

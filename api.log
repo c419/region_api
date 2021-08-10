@@ -1,0 +1,47 @@
+2021-08-09 22:31:08,920 _log  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-08-09 22:31:08,922 _log  * Restarting with stat
+2021-08-09 22:31:09,244 _log  * Debugger is active!
+2021-08-09 22:31:09,245 _log  * Debugger PIN: 143-249-024
+2021-08-09 22:31:38,398 _log  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-08-09 22:31:38,399 _log  * Restarting with stat
+2021-08-09 22:31:38,851 _log  * Debugger is active!
+2021-08-09 22:31:38,852 _log  * Debugger PIN: 143-249-024
+2021-08-09 22:48:37,022 _log  * Detected change in '/home/vov/projects/raketa-flask/region_api/__init__.py', reloading
+2021-08-09 22:48:37,187 _log  * Restarting with stat
+2021-08-09 22:49:53,929 <module> /home/vov/projects/raketa-flask/instance/database
+2021-08-09 22:49:54,154 _log  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-08-09 22:49:54,155 _log  * Restarting with stat
+2021-08-09 22:49:54,451 <module> /home/vov/projects/raketa-flask/instance/database
+2021-08-09 22:49:54,458 _log  * Debugger is active!
+2021-08-09 22:49:54,458 _log  * Debugger PIN: 143-249-024
+2021-08-09 22:59:24,207 _log  * Detected change in '/home/vov/projects/raketa-flask/region_api/__init__.py', reloading
+2021-08-09 22:59:24,358 _log  * Restarting with stat
+2021-08-09 22:59:24,688 <module> sqlite:////home/vov/projects/raketa-flask/instance/database/api.sqlite3
+2021-08-09 22:59:24,690 _log  * Debugger is active!
+2021-08-09 22:59:24,691 _log  * Debugger PIN: 143-249-024
+2021-08-09 22:59:31,469 <module> sqlite:////home/vov/projects/raketa-flask/instance/database/api.sqlite3
+2021-08-09 22:59:31,697 _log  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-08-09 22:59:31,698 _log  * Restarting with stat
+2021-08-09 22:59:31,975 <module> sqlite:////home/vov/projects/raketa-flask/instance/database/api.sqlite3
+2021-08-09 22:59:31,982 _log  * Debugger is active!
+2021-08-09 22:59:31,983 _log  * Debugger PIN: 143-249-024
+2021-08-09 23:02:48,391 _log  * Detected change in '/home/vov/projects/raketa-flask/region_api/__init__.py', reloading
+2021-08-09 23:02:48,541 _log  * Restarting with stat
+2021-08-09 23:02:48,889 _log  * Debugger is active!
+2021-08-09 23:02:48,891 _log  * Debugger PIN: 143-249-024
+2021-08-10 02:32:39,879 _log  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-08-10 02:32:39,880 _log  * Restarting with stat
+2021-08-10 02:38:30,984 _log  * Detected change in '/home/vov/projects/raketa-flask/tests/test_api.py', reloading
+2021-08-10 02:38:31,118 _log  * Restarting with stat
+2021-08-10 13:37:23,312 _log  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-08-10 13:37:23,313 _log  * Restarting with stat
+2021-08-10 13:44:22,185 _log  * Detected change in '/home/vov/projects/raketa-flask/tests/test_api.py', reloading
+2021-08-10 13:44:22,985 _log  * Restarting with stat
+2021-08-10 13:51:59,239 _log  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-08-10 13:51:59,241 _log  * Restarting with stat
+2021-08-10 13:54:28,263 _log  * Detected change in '/home/vov/projects/raketa-flask/region_api/__init__.py', reloading
+2021-08-10 13:54:28,413 _log  * Restarting with stat
+2021-08-10 13:55:37,184 _log  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-08-10 13:55:37,186 _log  * Restarting with stat
+2021-08-10 13:56:35,695 _log  * Detected change in '/home/vov/projects/raketa-flask/region_api/api.py', reloading
+2021-08-10 13:56:35,865 _log  * Restarting with stat

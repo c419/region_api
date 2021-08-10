@@ -39,3 +39,6 @@ def create_user(login, password):
     new_user = User(login=login, password=generate_password_hash(password, method='sha256'))
     db.session.add(new_user)
     db.session.commit()
+
+def create_schema():
+    db.create_all()
