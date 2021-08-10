@@ -34,3 +34,6 @@ def test_login(client):
     response = client.get(API_BASE + '/login', headers={'Authorization': f'Basic {basic_creds}'})
     print(response)
     assert False
+
+def tests_notready():
+    assert False, 'Tests aren\'t  ready (yet)'
