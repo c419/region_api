@@ -86,7 +86,7 @@ def get_cities():
 def create_city():
     name = request.json.get('name')
     region_id = request.json.get('region_id')
-    if not (name and region):
+    if not (name and region_id):
         abort(409)
     try:
         new_city = City(name=name, region_id=region_id)
