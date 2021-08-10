@@ -1,11 +1,13 @@
-from flask import Flask, request, abort, jsonify, make_response
-from models import db, City, Region, User, sql_exceptions
-from settings import app, API_BASE, logging
+from flask import Flask, request, abort, jsonify, make_response, current_app
+from .models import db, City, Region, User, sql_exceptions
+from region_api import API_BASE, logging
 import itertools
 from werkzeug.security import generate_password_hash, check_password_hash
 import jwt
 import datetime
 from functools import wraps
+
+app = current_app
 
 def token_required(f):
     @wraps(f)

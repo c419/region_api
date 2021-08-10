@@ -1,9 +1,9 @@
-from settings import app
+from flask import current_app 
 from flask_sqlalchemy import SQLAlchemy, sqlalchemy
 from werkzeug.security import generate_password_hash
 sql_exceptions = sqlalchemy.exc
 
-db = SQLAlchemy(app)
+db = SQLAlchemy()
 
 class City(db.Model):
     id = db.Column(db.Integer, primary_key=True)
