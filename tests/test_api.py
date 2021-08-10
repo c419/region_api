@@ -12,7 +12,6 @@ class TestConfig:
 
 login = 'admin'
 pwd = '123'
-basic_creds = b64encode(f'{login}:{pwd}'.encode('ascii')).decode('ascii')
 
 def init_db():
     db.create_all()
@@ -26,16 +25,21 @@ def client():
         with app.app_context():
             init_db()
             yield client
+@pytest.fixture(scope='module')
+def token(client):
+    basic_creds = b64encode(f'{login}:{pwd}'.encode('ascii')).decode('ascii')
+    client_headers = {'Authorization': f'Basic {basic_creds}'}
+    logging.debug(f'Client headers are: {client_headers}')
+    response = client.get(API_BASE + '/login', headers=client_headers)
+    return response.get_json()['token']
+
 
 def test_dummy(client):
     assert 1 == 1, 'test testing'
 
-def test_login(client):
-    client_headers = {'Authorization': f'Basic {basic_creds}'}
-    logging.debug(f'Client headers are: {client_headers}')
-    response = client.get(API_BASE + '/login', headers=client_headers)
-    logging.debug(response)
-    assert False
+def test_login(client, token):
+    logging.debug(f'Auth token is {token}')
+    assert token, 'Token not received during login'
 
 def tests_notready():
     assert False, 'Tests aren\'t  ready (yet)'

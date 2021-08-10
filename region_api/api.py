@@ -36,9 +36,12 @@ def token_required(f):
 @app.route(API_BASE + '/login', methods=['GET', 'POST'])  
 def login_user():
     auth = request.authorization   
+    logging.debug(f'Auth object is {auth}')
     if not auth or not auth.username or not auth.password:  
         abort(401)
     user = User.query.filter_by(login=auth.username).first()   
+    if not user:
+        abort(401)
     if check_password_hash(user.password, auth.password):  
         expiration = datetime.datetime.now() + datetime.timedelta(minutes=3)
         logging.debug(f'token expiration timestamp is {expiration.timestamp()}')
